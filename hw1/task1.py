@@ -10,6 +10,6 @@ def check_command_output(command, text):
 
 
 command = "ls"
-text = "file.txt"
+text = "hello.txt"
 result = check_command_output(command, text)
 print(result)
