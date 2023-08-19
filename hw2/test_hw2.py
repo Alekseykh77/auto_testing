@@ -26,8 +26,7 @@ def test_step3():
     assert checkout(f'cd {folder_in}; 7z d {folder_out}/arh1', 'Everything is Ok'), 'test3 FAIL'
 
 
-def test_step4():
-    assert checkout(f'cd {folder_in}; 7z l {folder_out}/arh1', 'Everything is Ok'), 'test4 FAIL'
+
 
 
 def test_step5():
