@@ -9,7 +9,7 @@ def checkout(cmd, text):
         return False
 
 
-def test_stepl():
+def test_step1():
     # test1
     assert checkout("cd /home/alexey/tst; 7z a ../out/arx2", "Everything is Ok"), "test1 FAIL"
 
@@ -38,7 +38,7 @@ def test_fixture(tmp_path):
     stat_file = tmp_path / "stat.txt"
     stat_file.touch()
 
-    test_stepl()
+    test_step1()
     write_stat(stat_file, "time1, files1, size1, stat1")
 
     test_step2()
